@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4631F1891EED9F6900D1AAA4 /* AddImage.py in Resources */ = {isa = PBXBuildFile; fileRef = 4631F1871EED9F6900D1AAA4 /* AddImage.py */; };
+		4631F18A1EED9F6900D1AAA4 /* Notify.py in Resources */ = {isa = PBXBuildFile; fileRef = 4631F1881EED9F6900D1AAA4 /* Notify.py */; };
 		4671D3641EED074B000F1D7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4671D3631EED074B000F1D7B /* AppDelegate.swift */; };
 		4671D3661EED074B000F1D7B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4671D3651EED074B000F1D7B /* ViewController.swift */; };
 		4671D3691EED074B000F1D7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4671D3671EED074B000F1D7B /* Main.storyboard */; };
 		4671D36B1EED074B000F1D7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4671D36A1EED074B000F1D7B /* Assets.xcassets */; };
 		4671D36E1EED074B000F1D7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4671D36C1EED074B000F1D7B /* LaunchScreen.storyboard */; };
-		4671D3791EED074B000F1D7B /* NotifierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4671D3781EED074B000F1D7B /* NotifierTests.swift */; };
-		4671D3841EED074B000F1D7B /* NotifierUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4671D3831EED074B000F1D7B /* NotifierUITests.swift */; };
 		4671D3971EED608D000F1D7B /* AWSLambda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4671D3941EED608D000F1D7B /* AWSLambda.framework */; };
 		4671D3981EED608D000F1D7B /* AWSLambda.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4671D3941EED608D000F1D7B /* AWSLambda.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4671D3991EED608D000F1D7B /* AWSRekognition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4671D3951EED608D000F1D7B /* AWSRekognition.framework */; };
@@ -68,6 +68,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4631F1871EED9F6900D1AAA4 /* AddImage.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = AddImage.py; sourceTree = "<group>"; };
+		4631F1881EED9F6900D1AAA4 /* Notify.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = Notify.py; sourceTree = "<group>"; };
 		4671D3601EED074B000F1D7B /* Notifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notifier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4671D3631EED074B000F1D7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4671D3651EED074B000F1D7B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,11 +78,7 @@
 		4671D36D1EED074B000F1D7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4671D36F1EED074B000F1D7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4671D3741EED074B000F1D7B /* NotifierTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotifierTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4671D3781EED074B000F1D7B /* NotifierTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifierTests.swift; sourceTree = "<group>"; };
-		4671D37A1EED074B000F1D7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4671D37F1EED074B000F1D7B /* NotifierUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotifierUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4671D3831EED074B000F1D7B /* NotifierUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifierUITests.swift; sourceTree = "<group>"; };
-		4671D3851EED074B000F1D7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4671D3931EED5977000F1D7B /* Notifier.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Notifier.entitlements; sourceTree = "<group>"; };
 		4671D3941EED608D000F1D7B /* AWSLambda.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSLambda.framework; sourceTree = "<group>"; };
 		4671D3951EED608D000F1D7B /* AWSRekognition.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSRekognition.framework; sourceTree = "<group>"; };
@@ -124,9 +122,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4631F1861EED9F4C00D1AAA4 /* AWSLambda-src */ = {
+			isa = PBXGroup;
+			children = (
+				4631F1871EED9F6900D1AAA4 /* AddImage.py */,
+				4631F1881EED9F6900D1AAA4 /* Notify.py */,
+			);
+			name = "AWSLambda-src";
+			sourceTree = "<group>";
+		};
 		4671D3571EED074B000F1D7B = {
 			isa = PBXGroup;
 			children = (
+				4631F1861EED9F4C00D1AAA4 /* AWSLambda-src */,
 				4671D3A21EED6B84000F1D7B /* AWSCognito.framework */,
 				4671D3A31EED6B84000F1D7B /* AWSCognitoAuth.framework */,
 				4671D3A41EED6B84000F1D7B /* AWSCognitoIdentityProvider.framework */,
@@ -135,8 +143,6 @@
 				4671D3951EED608D000F1D7B /* AWSRekognition.framework */,
 				4671D3961EED608D000F1D7B /* AWSS3.framework */,
 				4671D3621EED074B000F1D7B /* Notifier */,
-				4671D3771EED074B000F1D7B /* NotifierTests */,
-				4671D3821EED074B000F1D7B /* NotifierUITests */,
 				4671D3611EED074B000F1D7B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -164,24 +170,6 @@
 				4671D3AB1EED6C29000F1D7B /* Notifier-Bridging-Header.h */,
 			);
 			path = Notifier;
-			sourceTree = "<group>";
-		};
-		4671D3771EED074B000F1D7B /* NotifierTests */ = {
-			isa = PBXGroup;
-			children = (
-				4671D3781EED074B000F1D7B /* NotifierTests.swift */,
-				4671D37A1EED074B000F1D7B /* Info.plist */,
-			);
-			path = NotifierTests;
-			sourceTree = "<group>";
-		};
-		4671D3821EED074B000F1D7B /* NotifierUITests */ = {
-			isa = PBXGroup;
-			children = (
-				4671D3831EED074B000F1D7B /* NotifierUITests.swift */,
-				4671D3851EED074B000F1D7B /* Info.plist */,
-			);
-			path = NotifierUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,6 +289,8 @@
 			files = (
 				4671D36E1EED074B000F1D7B /* LaunchScreen.storyboard in Resources */,
 				4671D36B1EED074B000F1D7B /* Assets.xcassets in Resources */,
+				4631F18A1EED9F6900D1AAA4 /* Notify.py in Resources */,
+				4631F1891EED9F6900D1AAA4 /* AddImage.py in Resources */,
 				4671D3691EED074B000F1D7B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,7 +341,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4671D3791EED074B000F1D7B /* NotifierTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,7 +348,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4671D3841EED074B000F1D7B /* NotifierUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -604,6 +592,7 @@
 				4671D38A1EED074B000F1D7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4671D38B1EED074B000F1D7B /* Build configuration list for PBXNativeTarget "NotifierTests" */ = {
 			isa = XCConfigurationList;
@@ -612,6 +601,7 @@
 				4671D38D1EED074B000F1D7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4671D38E1EED074B000F1D7B /* Build configuration list for PBXNativeTarget "NotifierUITests" */ = {
 			isa = XCConfigurationList;
@@ -620,6 +610,7 @@
 				4671D3901EED074B000F1D7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
