@@ -1,11 +1,11 @@
-//
+
 //  AppDelegate.swift
 //  Notifier
 //
 //  Created by kang ki-hoon on 2017. 6. 11..
 //  Copyright © 2017년 kang ki-hoon. All rights reserved.
 //
-
+import AWSS3
 import UIKit
 
 @UIApplicationMain
@@ -13,10 +13,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let credentialsProvider = AWSCognitoCredentialsProvider(regionType: .USEast1, identityPoolId: "us-east-1:921c20f3-28eb-4328-85cb-e09793267578")
+        let configuration = AWSServiceConfiguration(region: .USEast1, credentialsProvider: credentialsProvider)
+        AWSServiceManager.default().defaultServiceConfiguration = configuration
         return true
+    }
+    func application(_ application: UIApplication, handleEventsForBackgroundURLSession identifier: String, completionHandler: @escaping () -> Void) {
+        // Store the completion handler.
+        AWSS3TransferUtility.interceptApplication(application, handleEventsForBackgroundURLSession: identifier, completionHandler: completionHandler)
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

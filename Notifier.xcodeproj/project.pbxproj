@@ -14,6 +14,20 @@
 		4671D36E1EED074B000F1D7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4671D36C1EED074B000F1D7B /* LaunchScreen.storyboard */; };
 		4671D3791EED074B000F1D7B /* NotifierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4671D3781EED074B000F1D7B /* NotifierTests.swift */; };
 		4671D3841EED074B000F1D7B /* NotifierUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4671D3831EED074B000F1D7B /* NotifierUITests.swift */; };
+		4671D3971EED608D000F1D7B /* AWSLambda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4671D3941EED608D000F1D7B /* AWSLambda.framework */; };
+		4671D3981EED608D000F1D7B /* AWSLambda.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4671D3941EED608D000F1D7B /* AWSLambda.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4671D3991EED608D000F1D7B /* AWSRekognition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4671D3951EED608D000F1D7B /* AWSRekognition.framework */; };
+		4671D39A1EED608D000F1D7B /* AWSRekognition.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4671D3951EED608D000F1D7B /* AWSRekognition.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4671D39B1EED608D000F1D7B /* AWSS3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4671D3961EED608D000F1D7B /* AWSS3.framework */; };
+		4671D39C1EED608D000F1D7B /* AWSS3.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4671D3961EED608D000F1D7B /* AWSS3.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4671D3A01EED6111000F1D7B /* AWSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4671D39F1EED6111000F1D7B /* AWSCore.framework */; };
+		4671D3A11EED6111000F1D7B /* AWSCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4671D39F1EED6111000F1D7B /* AWSCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4671D3A51EED6B84000F1D7B /* AWSCognito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4671D3A21EED6B84000F1D7B /* AWSCognito.framework */; };
+		4671D3A61EED6B84000F1D7B /* AWSCognito.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4671D3A21EED6B84000F1D7B /* AWSCognito.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4671D3A71EED6B84000F1D7B /* AWSCognitoAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4671D3A31EED6B84000F1D7B /* AWSCognitoAuth.framework */; };
+		4671D3A81EED6B84000F1D7B /* AWSCognitoAuth.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4671D3A31EED6B84000F1D7B /* AWSCognitoAuth.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4671D3A91EED6B84000F1D7B /* AWSCognitoIdentityProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4671D3A41EED6B84000F1D7B /* AWSCognitoIdentityProvider.framework */; };
+		4671D3AA1EED6B84000F1D7B /* AWSCognitoIdentityProvider.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4671D3A41EED6B84000F1D7B /* AWSCognitoIdentityProvider.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +47,26 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		4671D39D1EED608D000F1D7B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4671D39A1EED608D000F1D7B /* AWSRekognition.framework in Embed Frameworks */,
+				4671D3A11EED6111000F1D7B /* AWSCore.framework in Embed Frameworks */,
+				4671D3981EED608D000F1D7B /* AWSLambda.framework in Embed Frameworks */,
+				4671D3AA1EED6B84000F1D7B /* AWSCognitoIdentityProvider.framework in Embed Frameworks */,
+				4671D39C1EED608D000F1D7B /* AWSS3.framework in Embed Frameworks */,
+				4671D3A81EED6B84000F1D7B /* AWSCognitoAuth.framework in Embed Frameworks */,
+				4671D3A61EED6B84000F1D7B /* AWSCognito.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		4671D3601EED074B000F1D7B /* Notifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notifier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4671D3631EED074B000F1D7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +81,15 @@
 		4671D37F1EED074B000F1D7B /* NotifierUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotifierUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4671D3831EED074B000F1D7B /* NotifierUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifierUITests.swift; sourceTree = "<group>"; };
 		4671D3851EED074B000F1D7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4671D3931EED5977000F1D7B /* Notifier.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Notifier.entitlements; sourceTree = "<group>"; };
+		4671D3941EED608D000F1D7B /* AWSLambda.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSLambda.framework; sourceTree = "<group>"; };
+		4671D3951EED608D000F1D7B /* AWSRekognition.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSRekognition.framework; sourceTree = "<group>"; };
+		4671D3961EED608D000F1D7B /* AWSS3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSS3.framework; sourceTree = "<group>"; };
+		4671D39F1EED6111000F1D7B /* AWSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSCore.framework; sourceTree = "<group>"; };
+		4671D3A21EED6B84000F1D7B /* AWSCognito.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSCognito.framework; sourceTree = "<group>"; };
+		4671D3A31EED6B84000F1D7B /* AWSCognitoAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSCognitoAuth.framework; sourceTree = "<group>"; };
+		4671D3A41EED6B84000F1D7B /* AWSCognitoIdentityProvider.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSCognitoIdentityProvider.framework; sourceTree = "<group>"; };
+		4671D3AB1EED6C29000F1D7B /* Notifier-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Notifier-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +97,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4671D3991EED608D000F1D7B /* AWSRekognition.framework in Frameworks */,
+				4671D3A01EED6111000F1D7B /* AWSCore.framework in Frameworks */,
+				4671D3971EED608D000F1D7B /* AWSLambda.framework in Frameworks */,
+				4671D3A91EED6B84000F1D7B /* AWSCognitoIdentityProvider.framework in Frameworks */,
+				4671D39B1EED608D000F1D7B /* AWSS3.framework in Frameworks */,
+				4671D3A71EED6B84000F1D7B /* AWSCognitoAuth.framework in Frameworks */,
+				4671D3A51EED6B84000F1D7B /* AWSCognito.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +127,13 @@
 		4671D3571EED074B000F1D7B = {
 			isa = PBXGroup;
 			children = (
+				4671D3A21EED6B84000F1D7B /* AWSCognito.framework */,
+				4671D3A31EED6B84000F1D7B /* AWSCognitoAuth.framework */,
+				4671D3A41EED6B84000F1D7B /* AWSCognitoIdentityProvider.framework */,
+				4671D39F1EED6111000F1D7B /* AWSCore.framework */,
+				4671D3941EED608D000F1D7B /* AWSLambda.framework */,
+				4671D3951EED608D000F1D7B /* AWSRekognition.framework */,
+				4671D3961EED608D000F1D7B /* AWSS3.framework */,
 				4671D3621EED074B000F1D7B /* Notifier */,
 				4671D3771EED074B000F1D7B /* NotifierTests */,
 				4671D3821EED074B000F1D7B /* NotifierUITests */,
@@ -97,12 +154,14 @@
 		4671D3621EED074B000F1D7B /* Notifier */ = {
 			isa = PBXGroup;
 			children = (
+				4671D3931EED5977000F1D7B /* Notifier.entitlements */,
 				4671D3631EED074B000F1D7B /* AppDelegate.swift */,
 				4671D3651EED074B000F1D7B /* ViewController.swift */,
 				4671D3671EED074B000F1D7B /* Main.storyboard */,
 				4671D36A1EED074B000F1D7B /* Assets.xcassets */,
 				4671D36C1EED074B000F1D7B /* LaunchScreen.storyboard */,
 				4671D36F1EED074B000F1D7B /* Info.plist */,
+				4671D3AB1EED6C29000F1D7B /* Notifier-Bridging-Header.h */,
 			);
 			path = Notifier;
 			sourceTree = "<group>";
@@ -135,6 +194,8 @@
 				4671D35C1EED074B000F1D7B /* Sources */,
 				4671D35D1EED074B000F1D7B /* Frameworks */,
 				4671D35E1EED074B000F1D7B /* Resources */,
+				4671D39D1EED608D000F1D7B /* Embed Frameworks */,
+				4671D39E1EED60B7000F1D7B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -193,7 +254,13 @@
 				TargetAttributes = {
 					4671D35F1EED074B000F1D7B = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = ZURAY3HYZY;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.DataProtection = {
+								enabled = 0;
+							};
+						};
 					};
 					4671D3731EED074B000F1D7B = {
 						CreatedOnToolsVersion = 8.3.2;
@@ -253,6 +320,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4671D39E1EED60B7000F1D7B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework/strip-frameworks.sh\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4671D35C1EED074B000F1D7B /* Sources */ = {
@@ -412,10 +495,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZURAY3HYZY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Notifier/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = None.Notifier;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_DISABLE_SAFETY_CHECKS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "Notifier/Notifier-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -424,10 +515,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZURAY3HYZY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Notifier/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = None.Notifier;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_DISABLE_SAFETY_CHECKS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "Notifier/Notifier-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
